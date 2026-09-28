@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <defs>
+    <linearGradient id="wikaBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0060AF"/>
+      <stop offset="100%" stop-color="#003D73"/>
+    </linearGradient>
+  </defs>
+  <!-- WIKA Arch Emblem -->
+  <g transform="translate(10, 8)">
+    <rect x="0" y="0" width="74" height="74" rx="16" fill="url(#wikaBlue)"/>
+    <path d="M18 56 L37 18 L56 56 L46 56 L37 36 L28 56 Z" fill="#ffffff"/>
+    <rect x="33" y="44" width="8" height="12" fill="#F59E0B"/>
+  </g>
+  <text x="100" y="46" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="32" fill="#0060AF" letter-spacing="0.04em">WIKA</text>
+  <text x="102" y="66" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="12" fill="#64748b" letter-spacing="0.1em">WIJAYA KARYA BUMN</text>
+</svg>

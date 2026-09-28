@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <defs>
+    <linearGradient id="tgRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ee1c25"/>
+      <stop offset="100%" stop-color="#b80c14"/>
+    </linearGradient>
+    <linearGradient id="tgGray" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#999999"/>
+      <stop offset="100%" stop-color="#555555"/>
+    </linearGradient>
+  </defs>
+  <!-- Telkom Globe Emblem -->
+  <g transform="translate(10, 8)">
+    <circle cx="36" cy="36" r="36" fill="url(#tgRed)"/>
+    <path d="M14 36 A22 22 0 0 1 54 22 A28 28 0 0 0 14 36 Z" fill="#ffffff" opacity="0.95"/>
+    <path d="M12 40 C16 56 36 64 52 56 C40 60 24 54 18 42 Z" fill="url(#tgGray)"/>
+    <circle cx="48" cy="24" r="6" fill="#ffffff"/>
+  </g>
+  <!-- Telkom Indonesia typography -->
+  <text x="96" y="44" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="900" font-size="28" fill="#1e293b" letter-spacing="-0.02em">Telkom</text>
+  <text x="97" y="66" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="15" fill="#ee1c25" letter-spacing="0.1em">INDONESIA</text>
+</svg>

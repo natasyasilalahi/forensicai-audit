@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <defs>
+    <linearGradient id="ptbaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+  </defs>
+  <!-- Bukit Asam Peak / Mountain -->
+  <g transform="translate(10, 8)">
+    <rect x="0" y="0" width="74" height="74" rx="16" fill="#0F172A"/>
+    <polygon points="37,16 60,56 14,56" fill="url(#ptbaGrad)"/>
+    <polygon points="37,32 50,56 24,56" fill="#0F172A"/>
+  </g>
+  <text x="100" y="46" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="28" fill="#0F172A" letter-spacing="-0.02em">BUKIT ASAM</text>
+  <text x="102" y="66" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="12" fill="#CA8A04" letter-spacing="0.08em">PTBA • MEMBER OF MIND ID</text>
+</svg>

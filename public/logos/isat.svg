@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <defs>
+    <linearGradient id="isatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD100"/>
+      <stop offset="50%" stop-color="#FF5A00"/>
+      <stop offset="100%" stop-color="#E50019"/>
+    </linearGradient>
+  </defs>
+  <!-- Indosat Flame Emblem -->
+  <g transform="translate(10, 8)">
+    <circle cx="37" cy="37" r="37" fill="#FFF9E6"/>
+    <path d="M37 12 C48 24 56 36 50 54 C46 62 38 64 34 60 C42 54 44 44 38 36 C34 44 30 52 22 56 C16 48 22 32 37 12 Z" fill="url(#isatGrad)"/>
+    <circle cx="36" cy="46" r="6" fill="#FFD100"/>
+  </g>
+  <text x="98" y="46" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="28" fill="#E50019" letter-spacing="-0.02em">indosat</text>
+  <text x="100" y="66" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="12" fill="#FF5A00" letter-spacing="0.06em">OOREDOO HUTCHISON</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <defs>
+    <linearGradient id="kalbeGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#009640"/>
+      <stop offset="100%" stop-color="#00682B"/>
+    </linearGradient>
+  </defs>
+  <!-- Kalbe Running Figure / Vitality Leaf -->
+  <g transform="translate(10, 8)">
+    <circle cx="37" cy="37" r="37" fill="#E8F8EE"/>
+    <circle cx="46" cy="22" r="7" fill="url(#kalbeGreen)"/>
+    <path d="M22 56 C30 38 46 36 54 30 C48 42 38 52 28 58 Z" fill="url(#kalbeGreen)"/>
+    <path d="M34 32 C38 44 48 54 56 56 C44 56 36 48 30 40 Z" fill="#78BE20"/>
+  </g>
+  <text x="98" y="47" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="28" fill="#00682B" letter-spacing="-0.02em">KALBE</text>
+  <text x="100" y="66" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="12" fill="#64748b" letter-spacing="0.08em">PHARMACEUTICALS</text>
+</svg>

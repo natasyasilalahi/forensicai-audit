@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <defs>
+    <linearGradient id="smraRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BE123C"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+  </defs>
+  <!-- Summarecon Crown -->
+  <g transform="translate(10, 8)">
+    <circle cx="37" cy="37" r="37" fill="#FFF1F2"/>
+    <polygon points="20,48 26,28 37,40 48,28 54,48" fill="url(#smraRed)"/>
+    <circle cx="26" cy="24" r="3" fill="#BE123C"/>
+    <circle cx="37" cy="20" r="4" fill="#BE123C"/>
+    <circle cx="48" cy="24" r="3" fill="#BE123C"/>
+  </g>
+  <text x="98" y="46" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="24" fill="#881337" letter-spacing="-0.02em">summarecon</text>
+  <text x="100" y="66" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="12" fill="#64748b" letter-spacing="0.08em">AGUNG TBK • SMRA</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <defs>
+    <linearGradient id="antGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="antGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <!-- ANTAM Emblem -->
+  <g transform="translate(10, 8)">
+    <circle cx="36" cy="36" r="34" fill="none" stroke="url(#antGold)" stroke-width="7"/>
+    <polygon points="36,16 52,48 20,48" fill="url(#antGreen)"/>
+    <circle cx="36" cy="48" r="6" fill="#f59e0b"/>
+  </g>
+  <!-- ANTAM Text -->
+  <text x="94" y="46" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="900" font-size="30" fill="#0f172a" letter-spacing="0.05em">antam</text>
+  <text x="96" y="66" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="12" fill="#64748b" letter-spacing="0.12em">MEMBER OF MIND ID</text>
+</svg>

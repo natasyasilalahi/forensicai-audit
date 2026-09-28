@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <defs>
+    <linearGradient id="ciputraBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+  </defs>
+  <!-- Ciputra Equestrian Motif -->
+  <g transform="translate(10, 8)">
+    <circle cx="37" cy="37" r="37" fill="#F0F9FF"/>
+    <path d="M24 50 C28 42 34 32 44 26 C42 34 38 42 32 48 Z" fill="url(#ciputraBlue)"/>
+    <path d="M36 28 C42 22 52 20 54 26 C50 30 44 32 38 34 Z" fill="#0284C7"/>
+    <circle cx="32" cy="54" r="5" fill="#0369A1"/>
+  </g>
+  <text x="98" y="46" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="26" fill="#0369A1" letter-spacing="-0.02em">CIPUTRA</text>
+  <text x="100" y="66" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="12" fill="#64748b" letter-spacing="0.08em">DEVELOPMENT TBK • CTRA</text>
+</svg>

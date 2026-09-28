@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <defs>
+    <linearGradient id="adroGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="adroGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+  </defs>
+  <!-- Adaro Energy Leaf/Flame Graphic -->
+  <g transform="translate(12, 10)">
+    <path d="M34,8 C16,22 14,48 30,62 C48,46 54,20 34,8 Z" fill="url(#adroGreen)"/>
+    <path d="M36,24 C28,34 26,48 34,56 C44,46 46,30 36,24 Z" fill="url(#adroGold)"/>
+  </g>
+  <text x="86" y="46" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="900" font-size="30" fill="#15803d" letter-spacing="-0.02em">adaro</text>
+  <text x="88" y="66" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="13" fill="#64748b" letter-spacing="0.1em">ENERGY INDONESIA</text>
+</svg>
