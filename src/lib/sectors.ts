@@ -1,13 +1,24 @@
+import {
+  getMockCompanyReport,
+  getMockQuarterlyFinancials,
+  getMockQuarterlyDates,
+} from './mock-data';
+
 const BASE_URL = 'https://api.sectors.app/v2';
 
-function getApiKey(): string {
+function getApiKey(): string | null {
   const key = process.env.SECTORS_API_KEY;
-  if (!key) throw new Error('SECTORS_API_KEY is not set');
+  if (!key || key.trim() === '' || key === 'your_sectors_api_key_here' || key === 'masukkan_sectors_api_key_anda') {
+    return null;
+  }
   return key;
 }
 
 async function sectorsGet<T>(path: string): Promise<T> {
   const apiKey = getApiKey();
+  if (!apiKey) {
+    throw new Error('SECTORS_API_KEY is not configured');
+  }
   const url = `${BASE_URL}${path}`;
   
   const res = await fetch(url, {
@@ -151,29 +162,57 @@ export async function getCompanyReport(
   symbol: string,
   sections: string[] = ['overview', 'financials', 'management', 'valuation']
 ): Promise<CompanyReport> {
-  const sectionParam = sections.join(',');
-  return sectorsGet<CompanyReport>(
-    `/company/report/${symbol.toUpperCase()}/?sections=${sectionParam}`
-  );
+  try {
+    const sectionParam = sections.join(',');
+    return await sectorsGet<CompanyReport>(
+      `/company/report/${symbol.toUpperCase()}/?sections=${sectionParam}`
+    );
+  } catch (err) {
+    console.warn(
+      `[sectors] Live API unavailable for ${symbol} report, using offline forensic dataset:`,
+      err instanceof Error ? err.message : err
+    );
+    return getMockCompanyReport(symbol);
+  }
 }
 
 export async function getQuarterlyFinancials(
   symbol: string,
   nQuarters: number = 12
 ): Promise<QuarterlyFinancial[]> {
-  return sectorsGet<QuarterlyFinancial[]>(
-    `/financials/quarterly/${symbol.toUpperCase()}/?n_quarters=${nQuarters}`
-  );
+  try {
+    return await sectorsGet<QuarterlyFinancial[]>(
+      `/financials/quarterly/${symbol.toUpperCase()}/?n_quarters=${nQuarters}`
+    );
+  } catch (err) {
+    console.warn(
+      `[sectors] Live API unavailable for ${symbol} quarterly, using offline forensic dataset:`,
+      err instanceof Error ? err.message : err
+    );
+    return getMockQuarterlyFinancials(symbol, nQuarters);
+  }
 }
 
 export async function getQuarterlyDates(symbol: string): Promise<QuarterlyDates> {
-  return sectorsGet<QuarterlyDates>(
-    `/financials/quarterly/dates/${symbol.toUpperCase()}/`
-  );
+  try {
+    return await sectorsGet<QuarterlyDates>(
+      `/financials/quarterly/dates/${symbol.toUpperCase()}/`
+    );
+  } catch (err) {
+    console.warn(
+      `[sectors] Live API unavailable for ${symbol} dates, using offline fallback:`,
+      err instanceof Error ? err.message : err
+    );
+    return getMockQuarterlyDates(symbol);
+  }
 }
 
 export async function searchCompanies(q: string): Promise<Array<{ symbol: string; company_name: string }>> {
-  return sectorsGet<Array<{ symbol: string; company_name: string }>>(
-    `/screener/companies/?q=${encodeURIComponent(q)}&limit=10`
-  );
+  try {
+    return await sectorsGet<Array<{ symbol: string; company_name: string }>>(
+      `/screener/companies/?q=${encodeURIComponent(q)}&limit=10`
+    );
+  } catch {
+    return [];
+  }
 }
